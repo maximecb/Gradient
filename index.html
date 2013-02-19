@@ -1,0 +1,95 @@
+<html>
+    <head>
+
+        <title>Gradient: an Artificial Life Experiment</title>
+        <meta name="keywords" content="javascript, google chrome, cpu, performance, html5, artificial life, genetic algorithm, artificial intelligence, ai, evolution, natural selection">
+        <meta name="description" content="Gradient is a 2D grid world in which virtual lifeforms live. It is a simulation of natural selection in a computer program. The agents evolve artificial intelligence over time.">
+        <script language="javascript" src="utility.js"></script>
+        <script language="javascript" src="vector.js"></script>
+        <script language="javascript" src="world.js"></script>
+        <script language="javascript" src="agents.js"></script>
+        <script language="javascript" src="genalg.js"></script>
+        <script language="javascript" src="gradient.js"></script>
+
+        <link rel=stylesheet href="stylesheet.css" type="text/css">
+
+    </head>
+    <body>
+
+        <a href="https://github.com/maximecb/Gradient">
+        <img style="position: absolute; top: 0; right: 0; border: 0;" src="forkme.png" alt="Fork me on GitHub">
+        </a>
+
+        <div class="title">
+        Gradient: an Artificial Life Experiment
+        </div>
+
+        <div class="faq_link">
+        <a class="faq_link" href="faq.html">FAQ Page - What is this? How does it work?</a>
+        </div>
+
+        <div align="center">
+        <table>
+        <tr>
+            <!-- canvas column -->
+            <td>
+                <div class="canvas_frame" style="width:512px; height:512px;">
+                  <canvas id="canvas">
+                    Your browser does not support the canvas element.
+                  </canvas>
+                </div>
+            </td>
+
+            <!-- spacer column -->
+            <td width="10">
+            </td>
+
+            <!-- stats and general controls column -->
+            <td style="vertical-align: text-top;">
+                <!-- text stats div -->
+                <div id="stats_text" class="text_frame" style="width:400; height:300;">
+                </div>
+
+                <!-- controls div -->
+                <div align="center">
+                    <div style="height:10px;"></div>
+                    <div align="center">
+                      <button type="button" id="zoom_in_button" style="width: 100px" onClick="zoomIn();">Zoom In</button>
+                      &nbsp;&nbsp;&nbsp;&nbsp;
+                      <button type="button" id="zoom_out_button" style="width: 100px" onClick="zoomOut();">Zoom Out</button>
+                    </div>
+
+                    <div style="height:10px;"></div>
+                    <div align="center">
+                      <button id="real_time_button" type="button" style="width: 100px" onClick="goSlower();">Real-time</button>
+                      &nbsp;&nbsp;&nbsp;&nbsp;
+                      <button id="fast_mode_button" type="button" style="width: 100px" onClick="goFaster();">Fast Mode</button>
+                    </div>
+
+                    <div style="height:10px;"></div>
+                    <div align="center">
+                      <button type="button" style="width: 75px" onClick="moveLeft();">Left</button>
+                      &nbsp;&nbsp;
+                      <button type="button" style="width: 75px" onClick="moveRight();">Right</button>
+                      &nbsp;&nbsp;
+                      <button type="button" style="width: 75px" onClick="moveUp();">Up</button>
+                      &nbsp;&nbsp;
+                      <button type="button" style="width: 75px" onClick="moveDown();">Down</button>
+                    </div>
+                </div>
+            </td>
+        </tr>
+        </table>
+        </div>
+
+        <!-- debug text div -->
+        <div id="debug_text" style="color:white;">
+        </div>
+
+        <div class="copyright">
+        Copyright &copy; 2011 Maxime Chevalier-Boisvert
+        </div>
+
+    </body>
+</html>
+

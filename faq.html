@@ -1,0 +1,128 @@
+<html>
+    <head>
+        <title>Gradient FAQ Page</title>
+        <link rel=stylesheet href="stylesheet.css" type="text/css">
+    </head>
+    <body>
+
+        <div class="title">
+        Gradient FAQ Page
+        </div>
+
+        <div class="faq_q">What is Gradient?</div>
+        <p>
+        Gradient is a 2D grid world in which artificial "lifeforms" live. These
+        are simulated agents (virtual robots) which can perceive their
+        surroundings, perform computations using their simulated neural network
+        "brains", and act on these. The agents require energy to live and so
+        they need to eat virtual plants and drink virtual water every so often
+        in order to survive. They can also reproduce. This is what makes them a
+        form of
+        <a href="http://en.wikipedia.org/wiki/Artificial_life">artificial life</a>.
+        </p>
+
+        <div class="faq_q">How does Gradient work?</div>
+        <p>
+        The agents in the gradient world initially start with randomly connected
+        brains. These are recurrent
+        <a href="http://en.wikipedia.org/wiki/Artificial_neural_network">neural networks</a>
+        The agents perceive the world as a series of boolean values indicating the contents
+        of the grid cells around them. The grid world is updated iteratively. At each
+        iteration, the agents perceive their environment, perform computations, and get
+        to pick an action to perform (e.g.: turn left, turn right, move forward, consume
+        food or water, produce offspring).
+        </p>
+        <p>
+        Gradient implements a kind of
+        <a href="http://en.wikipedia.org/wiki/Genetic_algorithm">genetic algorithm</a>.
+        The world is initially seeded with randomly created agents. If the agents
+        do not eat food and drink water, they run out of energy and die. Inevitably,
+        some of the agents will die of starvation. If some agents manage to eat some
+        food and drink water, they gain energy, which allows them to survive longer.
+        If the number of agents in the world dips below a minimum number, more
+        random (seed) agents will be created to maintain a minimum population size.
+        </p>
+        <p>
+        If an agent accumulates enough energy, it will be allowed to choose to
+        voluntarily reproduce. This has an associated energy cost, and produced a
+        new agent based on a mutated version of it's parent's neural network.
+        Because of
+        <a href="http://en.wikipedia.org/wiki/Natural_selection">natural selection</a>,
+        the agents eventually develop enough "intelligence" to survive. That is,
+        the agents with brains that allow them to survive more effectively
+        become the most prevalent.
+        </p>
+        <p>
+        The hope is that eventually, agents that are capable of seeking food
+        and surviving long enough to reproduce will prevail, and the population
+        will maintain itself on its own. The world then no longer needs to be
+        seeded with random agents. Note that there is no upper limit on the
+        population size, it is purely limited by the availability of food in
+        the world.
+        </p>
+
+        <div class="faq_q">How long does it take the agents to become intelligent?</div>
+        <p>
+        If you let the simulation run in &quot;fast mode&quot;, it will run as fast
+        as your computer will allow. The amount of time required for the agents to
+        exhibit some degree of &quot;intelligent&quot; behavior (e.g.: looking for
+        food and water) can vary. In some instances, the simulation does not seem to
+        converge at all, and may be restarted by refreshing the webpage. I recommend
+        you let it run for over 10 minutes in fast mode and see what happens.
+        </p>
+
+        <div class="faq_q">Who programmed Gradient? How did it originate?</div>
+        <p>
+        I, Maxime Chevalier-Boisvert, programmed Gradient in my spare time a few
+        years ago. It was originally written in C++ and only ran on Linux under
+        GTK. I extended Gradient in 2009 to test some ideas for a neuroscience
+        class project. In May 2011, I decided to port this program to JavaScript
+        so that more people can see it and experiment with it. I believe it's
+        also a potentially interesting and demanding JavaScript benchmark.
+        </p>
+
+        <div class="faq_q">Is Gradient open source?</div>
+        <p>
+        Yes, all the JavaScript code for Gradient is licensed under the GPLv3. You
+        are free to download the code, modify it and experiment with it, so long as
+        you respect the terms of the GPL license.
+        </p>
+
+        <div class="faq_q">What browsers does Gradient support?</div>
+        <p>
+        Gradient has been tested on the latest Google Chrome and Firefox. It requires
+        support for the HTML5 canvas element to run, and is rather demanding in terms
+        of JavaScript performance. At the time of this writing, the latest Internet
+        Explorer does not support the canvas element and so will not be able to run
+        Gradient. We recommend Google Chrome for best performance.
+        </p>
+
+        <div class="faq_q">Are there other artificial life programs out there?</div>
+        <p>
+        Most definitely. I recommend doing a Google search for artificial life. One
+        of the most interesting examples I have found is 
+        <a href="http://en.wikipedia.org/wiki/Polyworld">Polyworld</a>, which is
+        actually quite similar to Gradient.
+        </p>
+
+        <div class="ad">
+            <script type="text/javascript"><!--
+            google_ad_client = "pub-3290005680781787";
+            /* Gradient */
+            google_ad_slot = "3944090217";
+            google_ad_width = 468;
+            google_ad_height = 60;
+            //-->
+            </script>
+            <script type="text/javascript"
+            src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+            </script>
+        </div>
+
+        <div class="copyright">
+        Copyright &copy; 2011 Maxime Chevalier-Boisvert
+        </div>
+
+    </body>
+</html>
+

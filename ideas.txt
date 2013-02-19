@@ -1,0 +1,7 @@
+- Prey with simple AI
+- Movable wall blocks and movable plants
+- Landmines
+- Sexual reproduction
+- Sliders/checkboxes/radio button options to control the world
+  - Separate popup window, or all at bottom?
+  - Complicated to do in popup

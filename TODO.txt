@@ -1,0 +1,31 @@
+- [DONE] Page title
+- [DONE] Increase def zoom lvl
+- [DONE] Zoom level indication
+- [DONE] Animate the water (simple)
+- [DONE] Fix keyboard keys moving on page
+- [DONE] Optimize rendering using sprite caching.
+- [DONE] Grey out or highlight real-time/fast mode/zoom buttons?
+- [DONE] Plants available, only show percent, not number
+- [DONE] Compute world itrs/sec computation speed
+- [DONE] Verify that agents can see properly 
+- [DONE] Optimize plant/block respawn mechamism
+- [    ] Slow down redraw rate in fast mode
+- [    ] Use Float64Array for agent state vector
+
+- [DONE] Bool net inputs for surrounding cells, food/water/energy
+- [DONE] Bool net with atoms, AND (v1, !v2, v3, ...)
+- [DONE] Implement simplest genalg to start testing
+- [DONE] Implement mutation scheme. Mutate last 20 individuals out of 100.
+- [DONE] Improved integer ANN brains?
+- [DONE] Self-reproduction with custom action? Takes energy.
+
+- [DONE] GPL license the files
+- [DONE] Copyright (C) 2011 - Maxime Chevalier-Boisvert at bottom
+- [DONE] CSS style sheet, shared with FAQ page
+- [DONE] FAQ page, link under title "FAQ Page - What is this? How does it Work?"
+- [DONE] Deployment/upload script, use scp?
+- [DONE] Discrete adsense ads
+- [DONE] Meta keywords
+- [DONE] Meta description
+- [DONE] Fade the gradient icon on the projects page
+
