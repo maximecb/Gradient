@@ -11,6 +11,11 @@
 - [DONE] Optimize plant/block respawn mechamism
 - [    ] Slow down redraw rate in fast mode
 - [    ] Use Float64Array for agent state vector
+- [    ] Add slightly less food
+- [    ] Make the walls create closed compartments
+  - Use path finding algorithm to make sure all are reachable?
+  - Can't add new wall or water cell if this would make a clear cell unreachable
+- [    ] Add water, plants after walls
 
 - [DONE] Bool net inputs for surrounding cells, food/water/energy
 - [DONE] Bool net with atoms, AND (v1, !v2, v3, ...)
