@@ -9,13 +9,14 @@
 - [DONE] Compute world itrs/sec computation speed
 - [DONE] Verify that agents can see properly 
 - [DONE] Optimize plant/block respawn mechamism
-- [    ] Slow down redraw rate in fast mode
 - [    ] Use Float64Array for agent state vector
+- [    ] Slow down redraw rate in fast mode
 - [    ] Add slightly less food
 - [    ] Make the walls create closed compartments
-  - Use path finding algorithm to make sure all are reachable?
-  - Can't add new wall or water cell if this would make a clear cell unreachable
+         - Use path finding to make sure all other cells are reachable?
+         - Can't add new wall/water cell if this would make a clear cell unreachable
 - [    ] Add water, plants after walls
+- [    ] Add legend to FAQ page, use tile images
 
 - [DONE] Bool net inputs for surrounding cells, food/water/energy
 - [DONE] Bool net with atoms, AND (v1, !v2, v3, ...)
