@@ -11,6 +11,7 @@
 - [DONE] Optimize plant/block respawn mechamism
 - [    ] Use Float64Array for agent state vector
 - [    ] Slow down redraw rate in fast mode
+- [    ] Allow genes to control mutation rate
 - [    ] Add slightly less food
 - [    ] Make the walls create closed compartments
          - Use path finding to make sure all other cells are reachable?
