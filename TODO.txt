@@ -9,7 +9,6 @@
 - [DONE] Compute world itrs/sec computation speed
 - [DONE] Verify that agents can see properly 
 - [DONE] Optimize plant/block respawn mechamism
-- [    ] Use Float64Array for agent state vector
 - [    ] Slow down redraw rate in fast mode
 - [    ] Allow genes to control mutation rate
 - [    ] Add slightly less food
